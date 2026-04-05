@@ -6,7 +6,7 @@ const Banner = () => {
         <div>
             <div className='relative'>
                 {/* <h1>video banner</h1> */}
-                <div className="h-[400px] overflow-hidden rounded-2xl">
+                <div className="h-[600px] overflow-hidden rounded-2xl">
                     <video
                         autoPlay
                         loop
@@ -19,7 +19,7 @@ const Banner = () => {
 
             </div>
 
-            <div className='absolute top-70 left-40 text-white flex items-end'>
+            <div className='absolute top-110 left-20 text-white flex items-end'>
                 {/* <h1>logo img left under</h1> */}
                 <div className='relative'>
                     <span className='text-9xl font-bold'>Floka</span>
@@ -29,7 +29,7 @@ const Banner = () => {
                 </h2>
             </div>
 
-            <div className='absolute top-65 right-40 text-white flex items-end'>
+            <div className='absolute top-105 right-20 text-white flex items-end'>
                 {/* <h1>img content right under</h1> */}
                 <div>
                     <div className='flex  gap-5 bg-white p-2 rounded-2xl'>

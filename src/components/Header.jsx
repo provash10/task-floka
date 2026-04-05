@@ -11,7 +11,7 @@ const Header = () => {
             <img className='w-28 h-auto' src="https://floka.casethemes.net/wp-content/uploads/2025/05/Logo.png" alt="" />
             </Link>
             <a href="/">Home</a>
-            <a href="/">Pages Nav</a>
+            <a href="/">Pages</a>
             <a href="/">Portfolio</a>
             <a href="/">Blog</a>
             <div className='flex items-center gap-2'>
