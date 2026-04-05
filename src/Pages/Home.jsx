@@ -3,6 +3,8 @@ import Banner from '../components/Banner/Banner';
 import BannerBottom from '../components/BannerBottom/BannerBottom';
 import CompanyOverview from '../components/CompanyOverview/CompanyOverview';
 import LatestTitle from '../components/LatestTitle/LatestTitle';
+import PortfoCard from '../components/PortfoCard/PortfoCard';
+
 
 
 
@@ -16,6 +18,7 @@ const Home = () => {
             <BannerBottom></BannerBottom>
             <CompanyOverview></CompanyOverview>
              <LatestTitle />
+             <PortfoCard></PortfoCard>
         </div>
     );
 };
