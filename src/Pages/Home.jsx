@@ -2,6 +2,9 @@ import React from 'react';
 import Banner from '../components/Banner/Banner';
 import BannerBottom from '../components/BannerBottom/BannerBottom';
 import CompanyOverview from '../components/CompanyOverview/CompanyOverview';
+import LatestTitle from '../components/LatestTitle/LatestTitle';
+
+
 
 
 
@@ -12,7 +15,7 @@ const Home = () => {
             <Banner></Banner>
             <BannerBottom></BannerBottom>
             <CompanyOverview></CompanyOverview>
-            
+             <LatestTitle />
         </div>
     );
 };
