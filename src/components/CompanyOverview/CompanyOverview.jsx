@@ -4,69 +4,62 @@ import SlideImgDown from '../custom/SlideImgDown/SlideImgDown';
 
 const CompanyOverview = () => {
     return (
-        <div className='flex gap-2 bg-gray-200 p-2'>
-            {/* left */}
-            <div className='w-[20%] bg-white rounded-2xl p-2'>
-                <div className='mb-30'>
-                    {/* <h1 className='text-black text-8xl'>25<span className='text-gray-400'>+</span></h1> */}
-                    <h1 className='text-black text-8xl'>
+        <div className='flex flex-col lg:flex-row gap-6 p-4 bg-gray-200'>
+
+            {/* LEFT SIDE */}
+            <div className='w-full lg:w-[20%] flex flex-col gap-6'>
+                <div className='bg-white rounded-2xl p-4'>
+                    <h1 className='text-black text-6xl sm:text-7xl md:text-8xl'>
                         <CountUp end={25} duration={2000} />
                         <span className='text-gray-400'>+</span>
                     </h1>
-                    <p className='text-sm font-bold text-gray-500'>Years of experience</p>
+                    <p className='text-sm font-bold text-gray-500 mt-2'>Years of experience</p>
                 </div>
 
-                <div className='mb-34'>
+                <div className='bg-white rounded-2xl p-4'>
                     <p className='text-md font-semibold text-gray-500'>Explore how we transform ideas into extraordinary digital experiences.</p>
                 </div>
 
-                <div>
+                <div className='bg-white rounded-2xl p-4'>
                     <div className='flex mb-2'>
-                        <img className="h-12 w-auto object-cover  rounded-full" src="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-counter-img1.webp" alt="" />
+                        <img className="h-12 w-auto object-cover rounded-full" src="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-counter-img1.webp" alt="" />
                         <img className="h-12 w-auto object-cover -ml-2 rounded-full" src="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-counter-img2.webp" alt="" />
                         <img className="h-12 w-auto object-cover -ml-2 rounded-full" src="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-counter-img3.webp" alt="" />
-                        <img className="h-12 w-auto object-cover -ml-2 rounded-full" src="	https://floka.casethemes.net/wp-content/uploads/2025/05/home1-counter-img4.webp" alt="" />
+                        <img className="h-12 w-auto object-cover -ml-2 rounded-full" src="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-counter-img4.webp" alt="" />
                     </div>
                     <p className='text-lg'>1200+ happy users review</p>
                 </div>
-
             </div>
 
-            {/* middle */}
-            <div className='w-[60%] rounded-2xl border bg-black'>
-                <div className='relative'>
-                    {/* <SlideImgDown>
-                        <div>
-                        <img className='w-[400px] h-auto px-4 py-4' src="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-author-img1.webp" alt="" />
-                    </div>
-                    </SlideImgDown> */}
-                    <SlideImgDown
-                        src="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-author-img1.webp"
-                        alt="Author"
-                        className="w-[400px] h-auto px-4 py-4"
-                    />
-                    <div className='absolute top-90 left-20'>
-                        <p className='text-white text-2xl'>“ At Floka, we merge strategy, creativity, and technology to <br /> shape brands that people love. ”</p>
-                        <h1 className='text-white font-semibold text-2xl'>Merizo H. Yelso  /CEO</h1>
-                    </div>
+            {/* MIDDLE IMAGE */}
+            <div className='w-full lg:w-[60%] rounded-2xl relative'>
+                <SlideImgDown
+                    src="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-author-img1.webp"
+                    alt="Author"
+                    className="w-full sm:w-[400px] h-auto mx-auto rounded-2xl"
+                />
+                <div className='absolute top-2/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center p-4'>
+                    <p className='text-white text-lg sm:text-2xl'>
+                        “ At Floka, we merge strategy, creativity, and technology to <br /> shape brands that people love. ”
+                    </p>
+                    <h1 className='text-white font-semibold text-lg sm:text-2xl mt-2'>Merizo H. Yelso  /CEO</h1>
                 </div>
             </div>
 
-            {/* right */}
-            <div className='w-[20%]'>
+            {/* RIGHT SIDE */}
+            <div className='w-full lg:w-[20%] flex flex-col gap-6'>
 
-                <div className='mb-2 bg-white rounded-2xl p-2'>
-                    <div className='mb-18'>
+                <div className='bg-white rounded-2xl p-4'>
+                    <div className='mb-2'>
                         <h1 className='text-md text-gray-400'>Follow us</h1>
                         <p className='text-md text-black'>For check updates</p>
-
                     </div>
-                    <div className='py-2'>
-                        <div className='flex items-center gap-4 m-2'>
+                    <div className='py-2 flex flex-col gap-2'>
+                        <div className='flex flex-wrap gap-2'>
                             <button className='border font-semibold border-gray-400 hover:border-black rounded-xl px-3 py-1'>DRIBBBLE</button>
                             <button className='border font-semibold border-gray-400 hover:border-black rounded-xl px-3 py-1'>BEHANCE</button>
                         </div>
-                        <div className='flex items-center gap-4'>
+                        <div className='flex flex-wrap gap-2'>
                             <button className='border font-semibold border-gray-400 hover:border-black rounded-xl px-3 py-1'>LINKEDIN</button>
                             <button className='border font-semibold border-gray-400 hover:border-black rounded-xl px-3 py-1'>X</button>
                             <button className='border font-semibold border-gray-400 hover:border-black rounded-xl px-3 py-1'>XING</button>
@@ -74,28 +67,24 @@ const CompanyOverview = () => {
                     </div>
                 </div>
 
-                <div className='mb-2 bg-white rounded-2xl p-2'>
-                    <div className=''>
-                        <h1 className='text-gray-400 mb-42'>Impressions</h1>
+                <div className='bg-white rounded-2xl p-4 flex flex-col gap-2'>
+                    <h1 className='text-gray-400'>Impressions</h1>
+                    <div className='flex justify-between bg-gray-200 rounded-2xl p-2'>
+                        <h2 className='text-md font-semibold'>Solutions</h2>
+                        <p className='text-gray-400 font-semibold'>100%</p>
                     </div>
-
-                    <div className=''>
-                        <div className='flex justify-between bg-gray-200 rounded-2xl p-2'>
-                            <h2 className='text-md font-semibold'>Solutions</h2>
-                            <p className='text-gray-400 font-semibold'>100%</p>
-                        </div>
-                        <div className='flex justify-between bg-black rounded-2xl p-2 w-[90%]'>
-                            <h2 className='text-white'>UI/UX</h2>
-                            <p className='text-white'>90%</p>
-                        </div>
-                        <div className='flex justify-between w-[72%] bg-white'>
-                            <h2 className='text-md font-semibold'>Explore</h2>
-                            <p className='text-gray-400 font-semibold'>72%</p>
-                        </div>
+                    <div className='flex justify-between bg-black text-white rounded-2xl p-2 w-[90%]'>
+                        <h2>UI/UX</h2>
+                        <p>90%</p>
+                    </div>
+                    <div className='flex justify-between w-[72%] bg-white'>
+                        <h2 className='text-md font-semibold'>Explore</h2>
+                        <p className='text-gray-400 font-semibold'>72%</p>
                     </div>
                 </div>
 
             </div>
+
         </div>
     );
 };
