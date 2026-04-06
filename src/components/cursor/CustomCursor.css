@@ -1,0 +1,46 @@
+/* * { cursor: none; } */
+
+.custom-cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 4px solid black;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.12s ease;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.cursor-particle {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9998;
+    animation: particle-move 0.6s ease-out forwards;
+}
+
+@keyframes particle-move {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) translate(0, 0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) translate(var(--dx), var(--dy)) scale(0);
+    }
+}

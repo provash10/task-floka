@@ -1,5 +1,6 @@
 import React from 'react';
-import CustomIcon from '../custom/customIcon';
+import CustomIcon from '../custom/customIcon/customIcon';
+
 
 const Banner = () => {
     return (

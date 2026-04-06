@@ -1,7 +1,6 @@
 import React from 'react';
-import { TiPlusOutline } from 'react-icons/ti';
-import CustomIcon from './custom/customIcon';
 import { Link } from 'react-router';
+import CustomIcon from './custom/customIcon/customIcon';
 
 const Header = () => {
     return (

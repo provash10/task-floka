@@ -1,4 +1,6 @@
 import React from 'react';
+import CountUp from '../custom/CountUp/CountUp';
+import SlideImgDown from '../custom/SlideImgDown/SlideImgDown';
 
 const CompanyOverview = () => {
     return (
@@ -6,7 +8,11 @@ const CompanyOverview = () => {
             {/* left */}
             <div className='w-[20%] bg-white rounded-2xl p-2'>
                 <div className='mb-30'>
-                    <h1 className='text-black text-8xl'>25<span className='text-gray-400'>+</span></h1>
+                    {/* <h1 className='text-black text-8xl'>25<span className='text-gray-400'>+</span></h1> */}
+                    <h1 className='text-black text-8xl'>
+                        <CountUp end={25} duration={2000} />
+                        <span className='text-gray-400'>+</span>
+                    </h1>
                     <p className='text-sm font-bold text-gray-500'>Years of experience</p>
                 </div>
 
@@ -29,9 +35,16 @@ const CompanyOverview = () => {
             {/* middle */}
             <div className='w-[60%] rounded-2xl border bg-black'>
                 <div className='relative'>
-                    <div>
+                    {/* <SlideImgDown>
+                        <div>
                         <img className='w-[400px] h-auto px-4 py-4' src="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-author-img1.webp" alt="" />
                     </div>
+                    </SlideImgDown> */}
+                    <SlideImgDown
+                        src="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-author-img1.webp"
+                        alt="Author"
+                        className="w-[400px] h-auto px-4 py-4"
+                    />
                     <div className='absolute top-90 left-20'>
                         <p className='text-white text-2xl'>“ At Floka, we merge strategy, creativity, and technology to <br /> shape brands that people love. ”</p>
                         <h1 className='text-white font-semibold text-2xl'>Merizo H. Yelso  /CEO</h1>

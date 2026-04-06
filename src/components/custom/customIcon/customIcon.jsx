@@ -1,5 +1,5 @@
 import React from "react";
-import "./customIcon.css";
+import "../customIcon/customIcon.css";
 
 const CustomIcon = () => {
   return (
